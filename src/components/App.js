@@ -6,6 +6,12 @@ const App = () => {
     { id: 1, text: "Learn React", completed: false },
     { id: 2, text: "Build a project", completed: false },
     { id: 3, text: "Deploy to production", completed: false },
+    // { id: 4, text: "Learn React", completed: false },
+    // { id: 5, text: "Build a project", completed: false },
+    // { id: 6, text: "Deploy to production", completed: false },
+    // { id: 7, text: "Learn React", completed: false },
+    // { id: 8, text: "Build a project", completed: false },
+    // { id: 9, text: "Deploy to production", completed: false },
   ]);
 
   const handleComplete = (todoId) => {
@@ -27,7 +33,7 @@ const App = () => {
               <li key={todo.id}>
                 {todo.text} &nbsp;
                 {!todo.completed && (
-                  <button onClick={() => handleComplete(todo.id)}>
+                  <button type="button" onClick={() => handleComplete(todo.id)}>
                     Complete
                   </button>
                 )}
