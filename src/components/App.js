@@ -34,7 +34,7 @@ const App = () => {
                 {todo.text} &nbsp;
                 {!todo.completed && (
                   <button type="button" onClick={() => handleComplete(todo.id)}>
-                    Complete
+                    complete
                   </button>
                 )}
               </li>
